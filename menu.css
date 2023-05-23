@@ -1,0 +1,99 @@
+/*body {
+    font-family: "Lato", sans-serif;
+}*/
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #D2E8C0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px; /*В ПРОЦЕНТАХ НАДО*/
+    text-decoration: none;
+    font-size: 25px;
+    color: #139674;
+    display: block;
+}
+
+.dropdown-btn {
+  padding: 6px 6px 6px 32px; /*В ПРОЦЕНТАХ НАДО*/
+    text-decoration: none;
+    font-size: 25px;
+    color: #139674;
+    display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidenav a:hover {
+    color: #EBC400;
+}
+
+.dropdown-btn:hover {
+  color: #EBC400;
+}
+
+.sidenav img {
+   height: width ;
+   width: 85% ; 
+   margin-left: 6px;
+}
+
+.main {
+    margin-left: 20%; /* Same as the width of the sidenav */
+}
+
+.main3 {
+    margin-left: 90%; /* Same as the width of the sidenav */
+}
+
+
+
+/* Добавим активный класс для активной выпадающей кнопки */
+.active {
+  background-color: #9DBD73;
+  
+}
+
+/* Выпадающий контейнер (по умолчанию скрытый). Необязательно: добавляем более светлый цвет фона и небольшой левый отступ, чтобы изменить дизайн выпадающего подменю */
+.dropdown-container {
+  display: none;
+  background-color: #BDDB94;
+  padding-left: 8px;
+}
+
+/* Необязательно: Стили иконки уголка */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Некоторые медиа-запросы для адаптивности */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a,.dropdown-btn {font-size: 18px;}
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {width: 150px;}
+    .main {margin-left:150px;}
+    .fa-caret-down {display:none;}
+}
+
+@media screen and (max-width: 300px) {
+    .sidenav {width: 120px;}
+    .main {margin-left:120px;}
+}
+
+

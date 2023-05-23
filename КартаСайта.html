@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Абрикос_грум</title>
+<link rel="shortcut icon" href="abr2.ico" />
+  <script type="text/javascript">
+  
+   let card = document.querySelectorAll(".card"); 
+for( let i = 1; i <= card.length; i++ ){ 
+    document.documentElement.style.setProperty("--face_height_" + i + "", document.querySelector(".card-container .card:nth-child(" + i + ") .face-2").scrollHeight + "px"); 
+}  
+  
+  
+  
+
+
+  </script>
+  
+ 	
+ <!-- <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}-->
+</script>
+ <link rel = "stylesheet" href = "глав.css">
+  <link rel = "stylesheet" href = "text.css">
+  <link rel = "stylesheet" href = "menu.css">
+  <link rel = "stylesheet" href = "reklama.css">
+  <link rel = "stylesheet" href = "foot.css">
+
+  
+<style>
+body{background: #EEFFE0;}
+.colorr1 {
+    
+    background: linear-gradient(45deg, #FCB267, #C8FC67);
+  
+}
+.colorr2 {
+    
+    background: linear-gradient(-45deg, #FCB267, #C8FC67);
+  
+}
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+
+
+.slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+
+
+
+
+.container {
+    position: relative;
+  }
+  
+  .container h2 {
+  color: white;
+  text-shadow: 1.5px 0 0 #949494;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+	
+  }
+
+  .iim { 
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  
+  .kart a {
+   
+    text-decoration: none;
+    font-size: 25px;
+    color: #139674;
+    display: block;
+}
+.kart a:hover {
+    color: #EBC400;
+}
+.kart p {
+   
+    text-decoration: none;
+    font-size: 25px;
+    color: #139674;
+    display: block;
+}
+</style>
+ </head>
+ <body>
+ 
+<div class="sidenav">
+	<img src="abr.png"   alt class="icon lazyloaded" data-ll-status="loaded"> <!--class="muru"  font-size: 25px;-->
+  <a href="Главная.html">Главная</a>
+  <a href="ОНас.html">О нас</a>
+  <a href="Контакты.html">Контакты</a>
+  <button class="dropdown-btn">Услуги
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Услуги.html">Кошки</a>
+    <a href="Собаки.html">Собаки (крупные породы)</a>
+  </div>
+ 
+</div>
+
+<div class="main">
+
+<h2>Один из лучших Зоосалонов <span style="float: right">Adress</span>
+<br> Ваш питомец скажет "Спасибо!" <span style="float: right">Telefon</span></h2>
+
+<ul class="kart">
+    <li><a href= "Главная.html">Главная </a></li>
+    <li><a href= "ОНас.html">О Нас </a></li>
+	<li><a href= "Контакты.html">Контакты </a></li>
+	<li><p>Услуги </p>
+        <ul>
+            <li><a href= "Услуги.html">Услуги для кошек</li>
+            <li><a href= "Собаки.html" >Услуги для крупных собак</a></li>
+        </ul>
+    </li>
+	<li><a href= "КартаСайта.html" >Карта сайта</a></li>
+</ul>
+
+<div id= "footer" class = "mu">
+
+<p><a href= "Главная.html">Главная </a>|  <a href= "ОНас.html">О нас </a> | <a href= "Контакты.html">Контакты </a> | <a href= "Услуги.html">Услуги для кошек</a> | <a href= "Собаки.html" >Услуги для крупных собак</a> |  Карта сайта</p>
+<p>Зоосалон "Абрикос_грум"</p>
+<p>По всем вопросам пишите в WhatsApp +79263668348</p>
+</div>
+</div>
+</div> 
+
+
+
+
+<div>
+<center><h1>
+	
+</h1></center>
+<p id="fileTextHere">
+	<!--&nbsp &nbsp &nbsp &nbsp <span class="text1">Выбрать комфортную переноску.</span> Перевозить питомца на руках или в обычной дорожной сумке небезопасно. Животное может вырваться наружу или испытать дополнительный стресс из-за нехватки воздуха. Поэтому для транспортировки малыша из питомника нужна просторная переноска.Чтобы не ошибиться с выбором, обращайте внимание на размер контейнера, наличие ребер жесткости на боковых стенках, вентиляционные отверстия и смотровые окошки. Питомец должен свободно вставать в переноске в полный рост, поворачиваться вокруг своей оси, ложиться с вытянутыми лапами и наблюдать за происходящим снаружи.
+Специалисты рекомендуют выбрать модель на вырост. Это позволит использовать ее в будущем. Например, для посещения ветеринарной клиники или путешествий.<br>
+<br>
+	&nbsp &nbsp &nbsp &nbsp <span class="text1">Обезопасить внешнюю среду.</span> Подготовить дом к появлению котенка нужно заранее. Спрячьте провода под напряжением, мусорные ведра, бытовую химию и домашнюю аптечку. Иначе малыш может получить серьезную электротравму или отравиться в момент исследования новой территории или в период смены зубов.<br>
+<br>
+	&nbsp &nbsp &nbsp &nbsp <span class="text1">Оборудовать окна системой «анти-кошка».</span> Установить на окнах стандартные анти-москитные сетки недостаточно. Они не выдержат вес питомца, если он попытается прыгнуть из окна в погоне за насекомым или птицей, и приведут к побегу или физической травме при падении с высоты.
+Защита на окнах должна соответствовать габаритам животного и устанавливаться еще на этапе появления нового питомца в доме.<br>
+<br>
+	&nbsp &nbsp &nbsp &nbsp <span class="text1">Подготовить изолированную комнату.</span> Пускать котенка во все комнаты в первые дни переезда необязательно. Питомца нужно поместить в отдельную изолированную комнату и оставить в ней вещи с привычными запахами.
+Специалисты рекомендуют взять в питомнике игрушки, подстилку и горсть туалетного наполнителя. Это уменьшит стресс при адаптации к новой обстановке и поможет сориентироваться в зонах сна, кормления и туалета.<br>
+<br>
+	&nbsp &nbsp &nbsp &nbsp <span class="text1">Дать время на адаптацию.</span> Знакомить питомца с новым домом нужно постепенно. Поставьте переноску на пол, откройте дверцу, отойдите назад и позвольте котенку выбраться наружу самостоятельно. Смелые животные выходят из укрытия почти сразу. Осторожные и боязливые – сидят в нем часами.
+	
+--></p>
+
+
+
+</div>
+
+
+
+
+ <script>
+/* Проходим по всем кнопкам активации выпадающего подменю, чтобы переключить скрытое/показанное состояние их контейнеров. Это позволяет пользователю иметь несколько выпадающих подменю без конфликтов */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+ </body>
+ 
+
+
+</html>

@@ -1,0 +1,30 @@
+#footer {
+	
+background: #665;
+color: #fff;
+font-size: 70%;
+padding: 5px; clear : both;
+margin-top: 20%;
+
+}
+
+Мы задали фон серо-зелёного цвета, цвет текста — белый.
+
+#footer a {
+color: #ff0;
+}
+
+#footer a:hover {
+color: #f00;
+}
+
+Ссылки в футере ярко-жёлтые, а в активном состоянии — красные. Для текста мы выбрали размер мельче всех на странице — 70%, для того, чтобы он не бросался в глаза.
+
+#footer p {
+padding: 2px;
+text-align: center;
+}
+
+.mu p{
+color:#FFFFFF;
+}
