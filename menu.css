@@ -37,11 +37,11 @@
 }
 
 .sidenav a:hover {
-    color: #EBC400;
+    color: #F39C12;
 }
 
 .dropdown-btn:hover {
-  color: #EBC400;
+  color: #F39C12;
 }
 
 .sidenav img {
@@ -61,15 +61,16 @@
 
 
 /* Добавим активный класс для активной выпадающей кнопки */
-.active {
-  background-color: #9DBD73;
+.active{
+  background-color: #D4FFAF;
   
 }
+
 
 /* Выпадающий контейнер (по умолчанию скрытый). Необязательно: добавляем более светлый цвет фона и небольшой левый отступ, чтобы изменить дизайн выпадающего подменю */
 .dropdown-container {
   display: none;
-  background-color: #BDDB94;
+  background-color: #E7FED4;
   padding-left: 8px;
 }
 
