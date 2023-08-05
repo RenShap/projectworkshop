@@ -1,283 +1,303 @@
+
+
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Абрикос_грум</title>
-  <link rel="shortcut icon" href="abr2.ico" />
-
-  <script type="text/javascript">
-  
-   let card = document.querySelectorAll(".card"); 
-for( let i = 1; i <= card.length; i++ ){ 
-    document.documentElement.style.setProperty("--face_height_" + i + "", document.querySelector(".card-container .card:nth-child(" + i + ") .face-2").scrollHeight + "px"); 
-}  
-  
-  
-
-  </script>
-  
-  
- <!-- <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-</script>-->
-  <link rel = "stylesheet" href = "глав.css">
-  <link rel = "stylesheet" href = "text.css">
-  <link rel = "stylesheet" href = "menu.css">
-  <link rel = "stylesheet" href = "reklama.css">
-  <link rel = "stylesheet" href = "foot.css">
-   <link rel = "stylesheet" href = "strel.css">
-
-  
-<style>
-body{background: #EEFFE0;}
-.colorr1 {
-    
-    background: #FFCB5D;
-  
-}
-
-
-
-.dropbtn {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 200px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
-
-
- .thumb img  {
-    border: 2% solid #FFCB5D; /* Рамка вокруг фотографии */
-    padding: 1%; /* Расстояние от картинки до рамки */
-    background: #FFCB5D; /* Цвет фона */
-    margin-right: 10px; /* Отступ справа */
-    margin-bottom: 10px; /* Отступ снизу */
-   }
-
-   
-
-
-
-.clearfloat {
-
-clear: both;
-}
-
-
-table{
-  border-spacing: 0px;
-  border-collapse: collapse;
-}
-
-
-
-
-
-
-  .container {
-    position: relative;
-  }
-  
-  .container h2 {
-  color: white;
-   text-shadow: 1.5px 0 0 #949494;
-  }
-
-  .topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
+<head>
+    <meta charset="utf-8">
+    <title>Название документа</title>
 	
-  }
+	
 
-  .iim { 
+    <style>
+        #navbar ul {
+            display: none;
+            background-color: #f90;
+            position: center;
+            top: 100%;
+			padding-top: 30px;
+        }
+
+        #navbar li:hover ul {
+            display: block;
+        }
+
+        #navbar, #navbar ul {
+            margin: 0;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+        #navbar {
+            height: 25px;
+            background-color: #A3DE78;
+            padding-left: 25px;
+            min-width: 470px;
+        }
+
+            #navbar li {
+                float: left;
+                left: 37%;
+                position: relative;
+                height: 100%;
+				
+            }
+
+                #navbar li a {
+                    display: block;
+                    padding: 6px;
+                    width: 100%;
+                    color: #000;
+                    text-decoration: none;
+                    text-align: center;
+					
+                }
+
+            #navbar ul li {
+                float: none;
+            }
+
+            #navbar li:hover {
+                background-color: #F1E783;
+            }
+
+            #navbar ul li:hover {
+                background-color: #666;
+            }
+			
+			
+			
+			/*кнопка на картинке*/
+			
+			
+			
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
     width: 100%;
     height: auto;
-    
-  }
-  
-  
-  
- 
-</style>
- </head>
- <body>
+}
 
+.container .btn {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
 
- <div class="btn-up btn-up_hide"></div>
-<div class="sidenav">
-	<img src="abr.png"   alt class="icon lazyloaded" data-ll-status="loaded"> <!--class="muru"  font-size: 25px;-->
-  <a href="Главная.html">Главная</a>
-  <a href="ОНас.html">О нас</a>
- <a href="Контакты.html">Контакты</a>
-  <button class="dropdown-btn">Услуги
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="Услуги.html">Кошки</a>
-    <a href="Собаки.html">Собаки (крупные породы)</a>
-  </div>
- 
-</div>
+.container .btn:hover {
+    background-color: transparent;
+}
 
-
-
-<div class="main">
-
-<h2>Один из лучших Зоосалонов 
-<br> Ваш питомец скажет "Спасибо!" </h2>
-
-<div class="container">
-    <img src="zoo4.png" class ="iim" alt="Норвегия" width="100%" height="1%">
-    <div class="topleft"><h2 >Мы очень любимы животных,<br> а они любят нас,<br> так давайте же вместе заботиться<br> о Ваших любимцах!)</h2> </div>
-  </div>
-
-
-
-
-<h2 align="center">Почему Вашему другу у нас понравится?</h2>
-<div>
-<table   width="100%" cellpadding="10" >
-<tbody>
-<tr >
-<th  class="colorr1"><img src="chel.png"  alt class="icon lazyloaded" data-ll-status="loaded"> <!--class="muru"--></th>
-<th  class="colorr1"><img src="bank.png"  alt class="icon lazyloaded" data-ll-status="loaded">  <!--class="muru"--></th>
-<th  class="colorr1"><img src="hard.png"  alt class="icon lazyloaded" data-ll-status="loaded"> <!--class="muru"--></th>
-
-</tr>
-</tbody>
-</table>
-
-<table  border="0" width="100%" cellpadding="10" >
-<tbody>
-<tr >
-<th><p>У нас работают лучшие грумеры,<br> которые обеспечат вашему питомцу желаемы результат.</p></th>
-<th align="center"><p>В нашем салоне предаставлены только самые качественные косметические средства,<br> что обеспечит вашему питомцу безопасность.</p></th>
-<th align="center" ><p>Мы подарим вашему питомцу любовь и заботу.</p></th>
-</tr>
-</tbody>
-</table>
-
-</div>
-<h2 align="center">Те, кого мы смогли осчастливить</h2>
-
-<p class="thumb" align="center">
-   <img src="https://chudo-prirody.com/uploads/posts/2021-08/1628908751_87-p-besporodnie-koshki-foto-99.jpg" alt="Фотография 1" width="25%" height="25%">
-   <img src="https://ferret-pet.ru/wp-content/uploads/6/4/e/64e381149090096d69740c5d11cd4dbb.jpeg" alt="Фотография 2" width="25%" height="25%">
-   <img src="https://funart.pro/uploads/posts/2021-07/1627160852_16-funart-pro-p-koshachii-gruming-zhivotnie-krasivo-foto-21.jpg" alt="Фотография 3" width="25%" height="25%">
-   <img src="https://prekrasnaja.com/wp-content/uploads/2021/04/02-1536x768.jpg" alt="Фотография 4" width="25%" height="25%"></p>
-
-
-
-<div class="photo-container-2">    
-    <div class="photo-1">
-        <a href= "https://vk.com/club212770908"><img src="zoo.png" /></a>
-    </div>
-    <div class="photo-2">
-         <a href= "https://vk.com/vet_doctor_nv"><img src="https://sun9-41.userapi.com/impf/-7eLJYcAJap3u3Ej5oVhWH4x8K6hM2TjMe4ksA/ke1ZsPm6ipc.jpg?size=1590x400&quality=95&crop=0,0,1590,400&sign=ec56c21e5b338a2b3ae30725d754b670&type=cover_group" /></a>
-    </div>
-</div>
-
-
-
-
-<div id= "footer" class = "mu">
-
-<p>Главная | <a href= "ОНас.html"> О нас </a> | <a href= "Контакты.html"> Контакты </a> | <a href= "Услуги.html">Услуги для кошек</a> | <a href= "Собаки.html" >Услуги для крупных собак</a> |  <a href= "КартаСайта.html" >Карта сайта</a></p>
-<p>Зоосалон "Абрикос_грум"</p>
-<p>По всем вопросам пишите в WhatsApp +79263668348</p>
-</div>
-</div> 
-
-
-
-<script>
-/* Проходим по всем кнопкам активации выпадающего подменю, чтобы переключить скрытое/показанное состояние их контейнеров. Это позволяет пользователю иметь несколько выпадающих подменю без конфликтов */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
+.parallax-image {
+  background: url("./mauu.png");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 
- const btnUp = {
-      el: document.querySelector('.btn-up'),
-      show() {
-        // удалим у кнопки класс btn-up_hide
-        this.el.classList.remove('btn-up_hide');
-      },
-      hide() {
-        // добавим к кнопке класс btn-up_hide
-        this.el.classList.add('btn-up_hide');
-      },
-      addEventListener() {
-        // при прокрутке содержимого страницы
-        window.addEventListener('scroll', () => {
-          // определяем величину прокрутки
-          const scrollY = window.scrollY || document.documentElement.scrollTop;
-          // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-          scrollY > 20 ? this.show() : this.hide();
-        });
-        // при нажатии на кнопку .btn-up
-        document.querySelector('.btn-up').onclick = () => {
-          // переместим в начало страницы
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-        }
-      }
-    }
-    btnUp.addEventListener();
-</script>
+div#tekst_sverhu_kartinki {
+
+position: relative;
+
+}.tekst_sverhu_kartinki {
+
+position: absolute;
+
+top: 10%;
+
+left: 65px;
+
+text-transform: uppercase;
+
+color: white;
+
+width: 350px;
 
 
 
- </body>
- 
+padding: 10px;
+
+text-align: center;
+
+font: bold 24px/34px Helvetica, Sans-Serif;
+
+}
+
+h1{
+color: #0C8A13;
+text-align: center;
+
+font: bold 24px/34px Helvetica, Sans-Serif;
+
+}
 
 
+
+
+/*разворот текста*/
+
+
+details{
+  display:block;
+  background: #fff;
+  width:400px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: .3em 1em .3em .9em;
+   border-bottom: 1px solid #e2e8f0;
+   font-size:1.4em;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {  
+  top: .4em;
+  right: .3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+    </style>
+</head>
+
+<body>
+<div class="parallax-image">
+    <img src="abr.png" alt="Snow" style="width:7%">
+    <ul id="navbar">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Новости</a></li>
+        <li>
+            <a href="#">Контакты</a>
+           
+        </li>
+        <li><a href="#">О нас</a></li>
+    </ul>
+
+  <div class="container">
+     <!--<img src="zoo3.png" alt="Snow" style="width:100%">-->
+	 
+	 <div id="tekst_sverhu_kartinki">
+
+<img src="zoo3.png " alt="Текст сверху картинки"  style="width:100%">
+
+<div class="tekst_sverhu_kartinki">МЯУ ГАВ</div>
+
+</div>
+  <button class="btn"><img src="lapa.png" alt="Snow" style="width:20%"></button>
+  </div>
+<h1>ЧТО ЖЕ МЫ МОЖЕМ ПРЕДЛОЖИТЬ ВАШЕМУ ПИТОМЦУ</h1>
+<h1>УСЛУГИ И ЦЕНЫ</h1>
+
+<div align="center">
+<details open>
+    <summary>Уход</summary>
+    <table  border="0" width="100%" cellpadding="10" >
+<tbody>
+<tr >
+<th align="left" class="colorr1">Вычесывание без мытья</th>
+<th align="center" class="colorr1">1000р</th>
+</tr>
+<tr >
+<th align="left">Мытье + сушка + вычесывание</th>
+<th align="center">1800р</th>
+</tr>
+<th align="left">Стрижка</th>
+<th align="center">1800р</th>
+</tr>
+<tr >
+<th align="left">Стрижка + сушка + мытье</th>
+<th align="center">2300р</th>
+</tr>
+<th align="left">Мейн кун мытье + сушка + вычесывание</th>
+<th align="center" >2500р</th>
+</tr>
+<tr >
+<th align="left">Мейн кун стрижка</th>
+<th align="center">2000р</th>
+</tr>
+</tbody>
+</table>
+</details>
+<details>
+    <summary>Дополнительный уход</summary>
+        <table  border="0" width="100%" cellpadding="10" >
+<tbody>
+<tr >
+<th align="left" class="colorr1">Чистка зубов пастой</th>
+<th align="center" class="colorr1">350р</th>
+</tr>
+<tr >
+<th align="left">Читка зубов ультразвуком средняя порода</th>
+<th align="center">1600р-2000р</th>
+</tr>
+<th align="left">Читка зубов ультразвуком крупная порода</th>
+<th align="center">2500р-3000р</th>
+</tr>
+<tr >
+<th align="left">Чисткак зубов механическим способом</th>
+<th align="center">500р-2000р</th>
+</tr>
+<th align="left">Чистка параанальной железы</th>
+<th align="center" >200р</th>
+</tr>
+
+</tbody>
+</table>
+</details>
+<!--<details>
+    <summary>Отдельный уход</summary>
+    <p>Скандинавская мифология — мифология древних скандинавов, часть древнегерманской мифологии.</p>
+</details>-->
+</div>
+
+<h1>НАШИ СЧАСТЛИВЧИКИ</h1>
+<h1>ГДЕ НАС НАЙТИ</h1>
+
+
+</div>
+</body>
 </html>
