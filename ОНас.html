@@ -2,291 +2,257 @@
 
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Абрикос_грум</title>
-<link rel="shortcut icon" href="abr2.ico" />
-  <script type="text/javascript">
-  
-   let card = document.querySelectorAll(".card"); 
-for( let i = 1; i <= card.length; i++ ){ 
-    document.documentElement.style.setProperty("--face_height_" + i + "", document.querySelector(".card-container .card:nth-child(" + i + ") .face-2").scrollHeight + "px"); 
-}  
-  
-  
-  
-
-
-  </script>
-  
- 	
- <!-- <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}-->
-</script>
- <link rel = "stylesheet" href = "глав.css">
-  <link rel = "stylesheet" href = "text.css">
-  <link rel = "stylesheet" href = "menu.css">
-  <link rel = "stylesheet" href = "reklama.css">
-  <link rel = "stylesheet" href = "foot.css">
-
-  
-<style>
-body{background: #EEFFE0;}
-.colorr1 {
-    
-    background: linear-gradient(45deg, #FCB267, #C8FC67);
-  
-}
-.colorr2 {
-    
-    background: linear-gradient(-45deg, #FCB267, #C8FC67);
-  
-}
-
-
-.dropbtn {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 200px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
-
-
-
-.slider {
-        width: 500px;
-        height: 300px;
-        background-color: yellow;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        text-align: center;
-        overflow: hidden;
-      }
-      .image-container {
-        width: 1500px;
-        background-color: pink;
-        height: 300px;
-        clear: both;
-        position: relative;
-        -webkit-transition: left 2s;
-        -moz-transition: left 2s;
-        -o-transition: left 2s;
-        transition: left 2s;
-      }
-      .slide {
-        float: left;
-        margin: 0px;
-        padding: 0px;
-        position: relative;
-      }
-      #slide-1:target ~ .image-container {
-        left: 0px;
-      }
-      #slide-2:target ~ .image-container {
-        left: -500px;
-      }
-      #slide-3:target ~ .image-container {
-        left: -1000px;
-      }
-      .buttons {
-        position: relative;
-        top: -20px;
-      }
-      .buttons a {
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        border-radius: 50px;
-        background-color: lightgreen;
-      }
-
-
-
-
-.container {
-    position: relative;
-  }
-  
-  .container h2 {
-  color: white;
-  text-shadow: 1.5px 0 0 #949494;
-  }
-
-  .topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
+<head>
+    <meta charset="utf-8">
+    <title>Название документа</title>
 	
-  }
+	
 
-  .iim { 
+    <style>
+        #navbar ul {
+            display: none;
+            background-color: #f90;
+            position: center;
+            top: 100%;
+			padding-top: 30px;
+        }
+
+        #navbar li:hover ul {
+            display: block;
+        }
+
+        #navbar, #navbar ul {
+            margin: 0;
+            padding: 10px;
+            list-style-type: none;
+        }
+
+        #navbar {
+            height: 25px;
+            background-color: #A3DE78;
+            padding-left: 25px;
+            min-width: 470px;
+        }
+
+            #navbar li {
+                float: left;
+                left: 37%;
+                position: relative;
+                height: 100%;
+				
+            }
+
+                #navbar li a {
+                    display: block;
+                    padding: 6px;
+                    width: 100%;
+                    color: #000;
+                    text-decoration: none;
+                    text-align: center;
+					
+                }
+
+            #navbar ul li {
+                float: none;
+            }
+
+          
+			
+			
+			
+			/*кнопка на картинке*/
+			
+			
+			
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
     width: 100%;
     height: auto;
-    
-  }
-</style>
- </head>
- <body>
-  <div class="btn-up btn-up_hide"></div>
-<div class="sidenav">
-	<img src="abr.png"   alt class="icon lazyloaded" data-ll-status="loaded"> <!--class="muru"  font-size: 25px;-->
-  <a href="Главная.html">Главная</a>
-  <a href="ОНас.html">О нас</a>
-  <a href="Контакты.html">Контакты</a>
-  <button class="dropdown-btn">Услуги
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="Услуги.html">Кошки</a>
-    <a href="Собаки.html">Собаки (крупные породы)</a>
-  </div>
- 
-</div>
-
-<div class="main">
-
-<h2>Один из лучших Зоосалонов 
-<br> Ваш питомец скажет "Спасибо!" </h2>
-<h2></h2>
-<div class="container">
-    <img src="zoo5.png" class ="iim" alt="Норвегия" width="100%" height="1%">
-    <div class="topleft"><h2 color = black>Каждому нужен уход, даже вашему зверьку.<br> Поход к груммеру помогает тщательно следить<br> за гигиеной домашнего животного, обеспечивает<br> комфортную жизнь вашему питомцу.<br> К сожалению в повседневной  жизни не всегда<br> возможно оказать животному должный уход,<br> поэтому мы гарантируем,<br> что сделаем это <br> качественно и безопастно!)</h2> </div>
-  </div>
-
-<h2 align="center">Наши груммеры</h2>
-
-<div class="slider">
-      <span id="slide-1"></span>
-      <span id="slide-2"></span>
-      <div class="image-container">
-        <img src="https://chudo-prirody.com/uploads/posts/2021-08/1628908751_87-p-besporodnie-koshki-foto-99.jpg" class="slide" width="500" height="300" />
-        <img src="https://adonius.club/uploads/posts/2022-06/1654254168_39-adonius-club-p-koshka-sero-belaya-krasivo-foto-44.jpg" class="slide" width="500" height="300" />
-		
-	  </div>
-      <div class="buttons">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-      </div>
-    </div>
-	
-
-
-<h2 align="center">Те, кого мы смогли осчастливить</h2>
-
-
-<p class="thumb" align="center">
-   <img src="https://chudo-prirody.com/uploads/posts/2021-08/1628908751_87-p-besporodnie-koshki-foto-99.jpg" alt="Фотография 1" width="25%" height="25%">
-   <img src="https://ferret-pet.ru/wp-content/uploads/6/4/e/64e381149090096d69740c5d11cd4dbb.jpeg" alt="Фотография 2" width="25%" height="25%">
-   <img src="https://funart.pro/uploads/posts/2021-07/1627160852_16-funart-pro-p-koshachii-gruming-zhivotnie-krasivo-foto-21.jpg" alt="Фотография 3" width="25%" height="25%">
-   <img src="https://prekrasnaja.com/wp-content/uploads/2021/04/02-1536x768.jpg" alt="Фотография 4" width="25%" height="25%"></p>
-<h2 align="center">Как к нам попасть?</h2>
-
-<div style="position:relative;overflow:hidden;" align="center"><a href="https://yandex.ru/maps/org/abrikos_grum/11016353382/?utm_medium=mapframe&utm_source=maps" 
-style="color:#eee;font-size:12px;position:absolute;top:0px;">Абрикос грум</a>
-<a href="https://yandex.ru/maps/10743/odincovo/category/pet_salon/184107224/?utm_medium=mapframe&utm_source=maps" 
-style="color:#eee;font-size:12px;position:absolute;top:14px;">Зоосалон, зоопарикмахерская в Одинцово</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.261768%2C55.684684&mode=poi&poi%5Bpoint%5D=37.262221%2C55.685443&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D11016353382&z=16.91" 
-width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-
-<div class="photo-container-2">    
-    <div class="photo-1">
-        <a href= "https://vk.com/club212770908"><img src="zoo.png" /></a>
-    </div>
-    <div class="photo-2">
-         <a href= "https://vk.com/vet_doctor_nv"><img src="https://sun9-41.userapi.com/impf/-7eLJYcAJap3u3Ej5oVhWH4x8K6hM2TjMe4ksA/ke1ZsPm6ipc.jpg?size=1590x400&quality=95&crop=0,0,1590,400&sign=ec56c21e5b338a2b3ae30725d754b670&type=cover_group" /></a>
-    </div>
-</div>
-
-<div id= "footer" class = "mu">
-
-<p><a href= "Главная.html">Главная </a>|  О нас  | <a href= "Контакты.html"> Контакты </a> | <a href= "Услуги.html">Услуги для кошек</a> | <a href= "Собаки.html" >Услуги для крупных собак</a> |  <a href= "КартаСайта.html" >Карта сайта</a></p>
-<p>Зоосалон "Абрикос_грум"</p>
-<p>По всем вопросам пишите в WhatsApp +79263668348</p>
-</div>
-</div>
-</div> 
-
-
-
-
-<div>
-<center><h1>
-	
-</h1></center>
-<p id="fileTextHere">
-	<!--&nbsp &nbsp &nbsp &nbsp <span class="text1">Выбрать комфортную переноску.</span> Перевозить питомца на руках или в обычной дорожной сумке небезопасно. Животное может вырваться наружу или испытать дополнительный стресс из-за нехватки воздуха. Поэтому для транспортировки малыша из питомника нужна просторная переноска.Чтобы не ошибиться с выбором, обращайте внимание на размер контейнера, наличие ребер жесткости на боковых стенках, вентиляционные отверстия и смотровые окошки. Питомец должен свободно вставать в переноске в полный рост, поворачиваться вокруг своей оси, ложиться с вытянутыми лапами и наблюдать за происходящим снаружи.
-Специалисты рекомендуют выбрать модель на вырост. Это позволит использовать ее в будущем. Например, для посещения ветеринарной клиники или путешествий.<br>
-<br>
-	&nbsp &nbsp &nbsp &nbsp <span class="text1">Обезопасить внешнюю среду.</span> Подготовить дом к появлению котенка нужно заранее. Спрячьте провода под напряжением, мусорные ведра, бытовую химию и домашнюю аптечку. Иначе малыш может получить серьезную электротравму или отравиться в момент исследования новой территории или в период смены зубов.<br>
-<br>
-	&nbsp &nbsp &nbsp &nbsp <span class="text1">Оборудовать окна системой «анти-кошка».</span> Установить на окнах стандартные анти-москитные сетки недостаточно. Они не выдержат вес питомца, если он попытается прыгнуть из окна в погоне за насекомым или птицей, и приведут к побегу или физической травме при падении с высоты.
-Защита на окнах должна соответствовать габаритам животного и устанавливаться еще на этапе появления нового питомца в доме.<br>
-<br>
-	&nbsp &nbsp &nbsp &nbsp <span class="text1">Подготовить изолированную комнату.</span> Пускать котенка во все комнаты в первые дни переезда необязательно. Питомца нужно поместить в отдельную изолированную комнату и оставить в ней вещи с привычными запахами.
-Специалисты рекомендуют взять в питомнике игрушки, подстилку и горсть туалетного наполнителя. Это уменьшит стресс при адаптации к новой обстановке и поможет сориентироваться в зонах сна, кормления и туалета.<br>
-<br>
-	&nbsp &nbsp &nbsp &nbsp <span class="text1">Дать время на адаптацию.</span> Знакомить питомца с новым домом нужно постепенно. Поставьте переноску на пол, откройте дверцу, отойдите назад и позвольте котенку выбраться наружу самостоятельно. Смелые животные выходят из укрытия почти сразу. Осторожные и боязливые – сидят в нем часами.
-	
---></p>
-
-
-
-</div>
-
-
-
-
- <script>
-/* Проходим по всем кнопкам активации выпадающего подменю, чтобы переключить скрытое/показанное состояние их контейнеров. Это позволяет пользователю иметь несколько выпадающих подменю без конфликтов */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
 }
-</script>
- </body>
- 
+
+.container .btn {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: transparent;
+}
+
+.parallax-image {
+  background: url("./mauu.png");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
+
+div#tekst_sverhu_kartinki {
+
+position: relative;
+
+}.tekst_sverhu_kartinki {
+
+position: absolute;
+
+top: 10%;
+
+left: 65px;
+
+text-transform: uppercase;
+
+color: white;
+
+width: 350px;
+
+
+
+padding: 10px;
+
+text-align: center;
+
+font: bold 24px/34px Helvetica, Sans-Serif;
+
+}
+
+h1{
+color: #0C8A13;
+text-align: center;
+
+font: bold 24px/34px Helvetica, Sans-Serif;
+
+}
+
+
+
+
+/*разворот текста*/
+
+
+details{
+  display:block;
+  background: #fff;
+  width:400px;
+  box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  overflow:hidden;
+  margin-bottom: 1.5rem;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+   display:block;
+   padding: .3em 1em .3em .9em;
+   border-bottom: 1px solid #e2e8f0;
+   font-size:1.4em;
+   cursor: pointer;
+   position: relative;
+}
+summary:before {  
+  top: .4em;
+  right: .3em;
+  color: transparent;
+  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+  width: 1em;
+  height: 1em;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+summary ~ * {
+   padding: 0 1em 10px 1.4em;
+}
+details[open] summary ~ *{ 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+
+
+<!--в одну строку-->
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#block2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+    </style>
+</head>
+
+<body>
+<div class="parallax-image">
+    <img src="abr.png" alt="Snow" style="width:7%">
+    <ul id="navbar">
+        <li><a href="Главная.html">Главная</a></li>
+        <li><a href="#">Наши работы</a></li>
+        <li>
+            <a href="Контакты.html">Контакты</a>
+           
+        </li>
+        <li><a href="Онас.html">О нас</a></li>
+    </ul>
+
+  <div class="container">
+     <!--<img src="zoo3.png" alt="Snow" style="width:100%">-->
+	 
+	 <div id="tekst_sverhu_kartinki">
+
+<img src="zoo3.png " alt="Текст сверху картинки"  style="width:100%">
+
+<div class="tekst_sverhu_kartinki">ЧТО ЖЕ МЫ ИЗ СЕБЯ ПРЕДСТАВЛЯЕМ?</div>
+
+</div>
+  <a href="tel:+79162257694"><button class="btn"><img src="lapa.png" alt="Snow" style="width:20%"></button></a>
+  </div>
+<h1>ПОЧЕМУ ЖЕ МЫ ТАКИЕ ЗАМУРЧАТЕЛЬНЫЕ</h1>
+<h1>НАШЕ ПРИЗВАНИЕ</h1>
+<h1>ГДЕ НАС НАЙТИ</h1>
+
+<div id="block2">       
+    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/abrikos_grum/11016353382/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Абрикос грум</a><a href="https://yandex.ru/maps/10743/odincovo/category/pet_salon/184107224/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Зоосалон, зоопарикмахерская в Одинцово</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.262243%2C55.685427&mode=search&oid=11016353382&ol=biz&z=16.49" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+   
+    <div style="width:560px;height:800px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/11016353382?comments"></iframe><a href="https://yandex.ru/maps/org/abrikos_grum/11016353382/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Абрикос грум на карте Одинцово — Яндекс Карты</a></div>
+ </div>
+</div>
+</body>
 </html>
